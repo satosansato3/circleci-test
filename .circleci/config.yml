@@ -1,0 +1,18 @@
+version: 2
+
+jobs:
+  test:
+    docker:
+      - image: circleci/python3.6
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          name: Run test
+          command: python test.py
+
+workflows:
+  version: 2
+  workflows:
+    jobs:
+      - test
