@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
           name: Run test
-          command: python test.py
+          command: python -m unittest test.py
 
 workflows:
   version: 2
