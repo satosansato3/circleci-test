@@ -3,7 +3,7 @@ version: 2
 jobs:
   test:
     docker:
-      - image: circleci/python3.6
+      - image: circleci/python3.6.3
     working_directory: ~/repo
     steps:
       - checkout
